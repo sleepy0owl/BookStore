@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">BookStore</string>
+    <string name="add_book">Add Book</string>
+    <string name="edit_book">Edit Book</string>
+    <!-- Product name -->
+    <string name="book_name">Book Name</string>
+    <!-- Product price -->
+    <string name="book_price">Price</string>
+    <!-- no. of copies -->
+    <string name="book_copies">Copies</string>
+    <!-- supplier name -->
+    <string name="supplier_name">Supplier Name</string>
+    <!-- supplier contact no -->
+    <string name="supplier_contact_no">Contact No.</string>
+    <!-- editor field's hints -->
+    <string name="editor_book_name">Name</string>
+    <string name="editor_book_price">Price</string>
+    <string name="editor_book_copies">Copies</string>
+    <string name="editor_supplier_name">Supplier Name</string>
+    <string name="editor_supplier_contact">Supplier Contact No.</string>
+
+    <!-- add activity menu -->
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+
+    <string name="new_book_insertion_failed">New book insertion failed</string>
+    <string name="new_book_insertion_successful">New book insertion successful</string>
+
+    <string name="empty_store">Store is presently empty!</string>
+
+    <string name="delete_book_failed">Deletion failed</string>
+    <string name="delete_book_successful">Deletion successful</string>
+
+    <string name="delete_message">Delete the book?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="unsaved_changes_message">Discard changes and quit editing?</string>
+    <string name="keep_editing">Keep Editing</string>
+    <string name="discard">Discard</string>
+</resources>

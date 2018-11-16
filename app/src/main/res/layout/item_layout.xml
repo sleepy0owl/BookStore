@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/list_book_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Introduction to Algorithm"/>
+    <TextView
+        android:id="@+id/list_book_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="500" />
+    <TextView
+        android:id="@+id/list_book_copies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="50" />
+    <TextView
+        android:id="@+id/list_book_supplier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="random supplier" />
+    <TextView
+        android:id="@+id/list_book_supplier_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="supplier no."/>
+</LinearLayout>
