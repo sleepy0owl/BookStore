@@ -65,6 +65,7 @@ public class AddActivity extends AppCompatActivity implements LoaderManager.Load
             invalidateOptionsMenu();
         }else {
             setTitle(getString(R.string.edit_book));
+            getLoaderManager().initLoader(BOOK_LOADER_ID, null, this);
         }
         Log.v(LOG_TAG, "End of mCurrentUri");
 
@@ -81,7 +82,6 @@ public class AddActivity extends AppCompatActivity implements LoaderManager.Load
         mSupplierName.setOnTouchListener(mOnTouchListener);
         mSupplierContact.setOnTouchListener(mOnTouchListener);
 
-        getLoaderManager().initLoader(BOOK_LOADER_ID, null, this);
         Log.v(LOG_TAG, "Loader is initialized");
     }
 
@@ -305,14 +305,14 @@ public class AddActivity extends AppCompatActivity implements LoaderManager.Load
             int bookCopies = cursor.getInt(bookCopiesIndex);
             int bookPrice = cursor.getInt(bookPriceIndex);
             String supplier = cursor.getString(supplierIndex);
-            int contactNo = cursor.getInt(contactIndex);
+            String contactNo = cursor.getString(contactIndex);
 
             //set the values to edit text fields
             mBookName.setText(bookName);
             mBookCopies.setText(Integer.toString(bookCopies));
             mBookPrice.setText(Integer.toString(bookPrice));
             mSupplierName.setText(supplier);
-            mSupplierContact.setText(Integer.toString(contactNo));
+            mSupplierContact.setText(contactNo);
         }
     }
 

@@ -132,9 +132,8 @@ public class BooksProvider extends ContentProvider {
             throw new IllegalArgumentException("Supplier should have a name.");
         }
 
-        Integer supplierContact = values.getAsInteger(BookEntry.BOOK_SUPPLIER_CONTACT);
-        String contactString = Integer.toString(supplierContact);
-        if (contactString.length() != 10){
+        String supplierContact = values.getAsString(BookEntry.BOOK_SUPPLIER_CONTACT);
+        if (supplierContact == null){
             throw new IllegalArgumentException("Supplier should have a valid phone no.");
         }
 
@@ -239,7 +238,7 @@ public class BooksProvider extends ContentProvider {
         }
 
         if (values.containsKey(BookEntry.BOOK_SUPPLIER_CONTACT)){
-            Integer supplierContact = values.getAsInteger(BookEntry.BOOK_SUPPLIER_CONTACT);
+            String supplierContact = values.getAsString(BookEntry.BOOK_SUPPLIER_CONTACT);
             if (supplierContact == null){
                 throw new IllegalArgumentException("Supplier should have a valid phone no.");
             }

@@ -2,4 +2,5 @@
 <resources>
     <dimen name="activity_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="list_layout_padding">8dp</dimen>
 </resources>

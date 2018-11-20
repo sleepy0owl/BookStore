@@ -2,6 +2,7 @@
     <string name="app_name">BookStore</string>
     <string name="add_book">Add Book</string>
     <string name="edit_book">Edit Book</string>
+    <string name="book_details">Book Details</string>
     <!-- Product name -->
     <string name="book_name">Book Name</string>
     <!-- Product price -->
@@ -37,4 +38,15 @@
     <string name="unsaved_changes_message">Discard changes and quit editing?</string>
     <string name="keep_editing">Keep Editing</string>
     <string name="discard">Discard</string>
+
+    <string name="price">Price: </string>
+    <string name="copies">Copies: </string>
+
+    <string name="increase_book">+</string>
+    <string name="decrease_book">-</string>
+    <string name="button_call">Call button</string>
+    <string name="button_delete">Delete button</string>
+    <string name="add_to_cart">Book is added to cart</string>
+    <string name="stock_zero">Sorry, this book is no longer available</string>
+    <string name="cart">shopping cart</string>
 </resources>

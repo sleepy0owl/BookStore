@@ -15,8 +15,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.example.sourav.bookstore.data.BookContract.BookEntry;
 import com.example.sourav.bookstore.data.BookDbHelper;
 
@@ -56,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         booksListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(MainActivity.this, AddActivity.class);
+                Intent intent = new Intent(MainActivity.this, DetailsActivity.class);
 
                 //get the uri of the clicked item
                 Uri currentUri = ContentUris.withAppendedId(BookEntry.CONTENT_URI, id);
@@ -116,5 +119,13 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     @Override
     public void onLoaderReset(Loader<Cursor> loader) {
         mBookCursorAdapter.swapCursor(null);
+    }
+
+    private void buyBooks(){
+        Toast.makeText(this, "buy button is clicked", Toast.LENGTH_SHORT).show();
+    }
+
+    private void callSupplier(){
+        Toast.makeText(this, "call button is clicked", Toast.LENGTH_SHORT).show();
     }
 }
